@@ -1,0 +1,12 @@
+{
+  "name": "watermark-app",
+  "version": "1.0.0",
+  "description": "Application for add watermark (text or image) to certain image",
+  "main": "app.js",
+  "author": "MG",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "6.5.0",
+    "jimp": "0.6.4"
+  }
+}
