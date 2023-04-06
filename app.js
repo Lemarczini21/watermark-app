@@ -44,7 +44,7 @@ const addImageWatermarkToImage = async function (
   }
 };
 
-prepareOutputFilename = (path) => {
+const prepareOutputFilename = (path) => {
   return path.split('.').join('-with-watermark.');
 };
 
@@ -109,7 +109,7 @@ const startApp = async () => {
         default: 'logo.png',
       },
     ]);
-    if (!fs.existsSync('./img/' + options.watermark)) {
+    if (!fs.existsSync('./img/' + image.filename)) {
       console.log('Something went wrong... try again!');
       return;
     }
